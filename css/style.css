@@ -1,0 +1,80 @@
+.inner {
+    width: 1176px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.inner::after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+
+
+
+.header {
+    background-color: #000;
+    height: 86px;
+}
+
+.logo {
+    margin: 32px 0;
+    width: 145px;
+    height: 22px;
+    float: left;
+}
+
+.logo_link {
+    display: block;
+    height: 100%;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: contain;
+}
+
+.nav {
+    float: left;
+}
+
+.nav_link {
+    padding: 32px 36px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+}
+
+.btn_wrap {
+    float: right;
+    margin: 23px 0;
+}
+
+.btn_biz {
+    padding: 8px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+}
+
+.btn_biz+.btn_biz {
+    margin-left: 4px;
+}
+
+
+
+/*메인배너*/
+.main_slide {
+    height: 82vh;
+    background-color: darkblue;
+}
+
+.slide_item {
+    height: 100%;
+}
+
+.text_wrap {
+    text-align: center;
+}
+
+.tlt {
+    display: block;
+}
