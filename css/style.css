@@ -43,7 +43,6 @@
 
 .main_depth {}
 
-/*ul*/
 
 .main_depth_item {
   display: inline-block;
@@ -51,10 +50,7 @@
   padding: 32px 36px;
 }
 
-/*li*/
-
-.main_depth_link,
-.sub_depth_link {
+.main_depth_link {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -127,18 +123,41 @@
   display: flex;
   flex-wrap: nowrap;
   z-index: 1;
+  user-select: none;
 }
 
 .slide_item {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*아이템에 플랙스가 왜 필요할까*/
+  /* 텍스트 가운데 들어가게함 */
+  position: relative;
+  left: 0px;
   width: 100%;
   height: 80vh;
   flex-shrink: 0;
   /*컨테이너(부모)의 크기에 맞게 줄어들지 않도록*/
-  transition: left 0.15s;
+  transition: left 0.3s;
+}
+
+.slide_item.item1 {
+  background-color: rgb(62, 82, 62);
+}
+
+.slide_item.item2 {
+  background-color: rgb(61, 88, 61);
+}
+
+.slide_item.item3 {
+  background-color: rgb(54, 88, 54);
+}
+
+.slide_item.item4 {
+  background-color: rgb(43, 84, 43);
+}
+
+.slide_item.item5 {
+  background-color: rgb(36, 83, 36);
 }
 
 .text_wrap {
