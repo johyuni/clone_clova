@@ -40,14 +40,18 @@
   float: left;
   margin-left: 54px;
 }
-.main_depth {
-} /*ul*/
+
+.main_depth {}
+
+/*ul*/
 
 .main_depth_item {
   display: inline-block;
   vertical-align: top;
   padding: 32px 36px;
-} /*li*/
+}
+
+/*li*/
 
 .main_depth_link,
 .sub_depth_link {
@@ -76,7 +80,7 @@
   vertical-align: top;
 }
 
-.sub_depth_item + .sub_depth_item {
+.sub_depth_item+.sub_depth_item {
   margin-left: 136px;
 }
 
@@ -89,7 +93,7 @@
 }
 
 /* 소메뉴 내려오기 */
-.main_depth_item:hover .main_depth_link + .sub_depth {
+.main_depth_item:hover .main_depth_link+.sub_depth {
   display: block;
 }
 
@@ -107,7 +111,7 @@
   box-sizing: border-box;
 }
 
-.btn_biz + .btn_biz {
+.btn_biz+.btn_biz {
   margin-left: 4px;
 }
 
@@ -118,25 +122,23 @@
 
 .main_slide {
   position: relative;
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
   z-index: 1;
 }
 
 .slide_item {
-  height: 82vh;
-  width: 100vw;
-}
-
-.item1 {
-  background: salmon;
-}
-.item2 {
-  background: sandybrown;
-}
-.item3 {
-  background: seagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*아이템에 플랙스가 왜 필요할까*/
+  width: 100%;
+  height: 80vh;
+  flex-shrink: 0;
+  /*컨테이너(부모)의 크기에 맞게 줄어들지 않도록*/
+  transition: left 0.15s;
 }
 
 .text_wrap {
