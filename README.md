@@ -14,3 +14,8 @@ https://devinus.tistory.com/48 가장 구간별 설명이 많은 예제 참조 :
 
 <!-- i.setAttribute("style", `left: ${-offset}px`); => 따옴표/쌍따옴표 아님 <`> 로사용 -->
 <!-- .slide_item 에 css left값 빠뜨림 => 스크롤 안넘어감 -->
+
+\*남은것
+호버효과/ 커서포인트 그외 디자인적인 요소
+코드 배운대로 짰는지 확인하고 수정하기
+서브메뉴 정렬 확인
