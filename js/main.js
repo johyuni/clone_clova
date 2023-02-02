@@ -11,7 +11,6 @@ let currSlide = 1;
 
 // 페이지네이션 생성
 const pagination = document.querySelector(".slide_pagination");
-
 for (let i = 0; i < maxSlide; i++) {
   if (i === 0) pagination.innerHTML += '<li class="page_item active"></li>';
   else pagination.innerHTML += '<li class="page_item"></li>';
