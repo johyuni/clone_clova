@@ -15,10 +15,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #000;
   height: 86px;
-  z-index: 999;
+  background: #000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 999;
 }
 
 .logo {
@@ -41,8 +41,8 @@
   margin-left: 54px;
 }
 
-.main_depth {}
-
+.main_depth {
+}
 
 .main_depth_item {
   display: inline-block;
@@ -54,6 +54,7 @@
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
+  transition: 0.6s;
 }
 
 /* 소메뉴 */
@@ -76,7 +77,7 @@
   vertical-align: top;
 }
 
-.sub_depth_item+.sub_depth_item {
+.sub_depth_item + .sub_depth_item {
   margin-left: 136px;
 }
 
@@ -86,34 +87,50 @@
   line-height: 14px;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.6);
-}
-
-/* 소메뉴 내려오기 */
-.main_depth_item:hover .main_depth_link+.sub_depth {
-  display: block;
+  transition: all 0.2s ease-in-out;
 }
 
 /* 버튼박스 */
 .btn_wrap {
   float: right;
-  margin: 23px 0;
+  margin: 24px 0;
 }
 
 .btn_biz {
+  display: inline-block;
   padding: 8px 14px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  font-size: 12px;
+  font-weight: 700;
 }
 
-.btn_biz+.btn_biz {
+.btn_biz + .btn_biz {
   margin-left: 4px;
 }
 
-/*** 메인배너 ****/
+/* 헤더 호버 효과 */
+.main_depth_item:hover .main_depth_link,
+.sub_depth_link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.main_depth_item:hover .main_depth_link + .sub_depth {
+  display: block;
+}
+
+.btn_biz:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/*** 메인 ****/
 .page_wrap {
   padding-top: 86px;
+  height: 9999px; /*헤더 고정 되는것 확인할수있게*/
 }
 
 .main_slide {
@@ -129,37 +146,17 @@
 .slide_item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* 텍스트 가운데 들어가게함 */
+  justify-content: center; /* 텍스트 정가운데 */
   position: relative;
   left: 0px;
   width: 100%;
   height: 80vh;
-  flex-shrink: 0;
-  /*컨테이너(부모)의 크기에 맞게 줄어들지 않도록*/
+  flex-shrink: 0; /* 컨테이너 크기에 맞게 줄어들지 않도록 */
   transition: left 0.3s;
+  background: #000c17;
 }
 
-.slide_item.item1 {
-  background-color: rgb(99, 191, 210);
-}
-
-.slide_item.item2 {
-  background-color: rgb(92, 191, 211);
-}
-
-.slide_item.item3 {
-  background-color: rgb(82, 192, 214);
-}
-
-.slide_item.item4 {
-  background-color: rgb(70, 190, 214);
-}
-
-.slide_item.item5 {
-  background-color: rgb(59, 190, 216);
-}
-
+/* 슬라이드 텍스트영역 */
 .txt_wrap {
   text-align: center;
 }
@@ -172,10 +169,16 @@
   font-weight: 800;
 }
 
+.exbold {
+  display: inline-block;
+  font-weight: 800;
+  color: #fff;
+}
+
 .btn_more {
   display: block;
   margin: 0 auto;
-  padding: 0 32px 0 33px;
+  padding: 0 32px;
   font-size: 16px;
   font-weight: 800;
   line-height: 48px;
@@ -184,12 +187,19 @@
   color: #fff;
   border: 1px solid #fff;
   border-radius: 100px;
+  transition: all 0.2s ease-in-out;
 }
 
-.tlt+.btn_more {
+.tlt + .btn_more {
   margin-top: 20px;
 }
 
+/* 호버효과 */
+.btn_more:hover {
+  background: #05d685;
+  border-color: #05d685;
+  color: #fff;
+}
 
 /* 페이지네이션 */
 .slide_pagination {
