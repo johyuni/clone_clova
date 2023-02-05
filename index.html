@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>23.01.31 클로바 클론코딩</title>
     <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -238,8 +243,62 @@
         </div>
         <ul class="slide_pagination"></ul>
       </div>
+
+      <!-- 스와이프 라이브러리 -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="txt_wrap">
+              <strong class="tlt"
+                >초대규모 AI로<br />주목받는 서비스 만들기</strong
+              >
+              <button class="btn_more" type="button">무료로 시작</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="txt_wrap">
+              <strong class="tlt"
+                >대화의 기술로 사람을 돕는,<span class="exbold"
+                  >클로바 케어콜</span
+                ><br />
+                <span class="exbold">CLOVA</span> Contact Center</strong
+              >
+              <button class="btn_more" type="button">자세히보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="txt_wrap">
+              <strong class="tlt"
+                >클로바를 만드는 사람과 기술에 관한 이야기<br />CLOVA
+                <span class="exbold">Engineering Blog</span></strong
+              >
+              <button class="btn_more" type="button">자세히보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="txt_wrap">
+              <strong class="tlt"
+                >내가 만난 첫 번째 스마트홈<br />클로바 클락</strong
+              >
+              <button class="btn_more" type="button">자세히보기</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="txt_wrap">
+              <strong class="tlt"
+                >이미지에서 텍스트를 인식하는 기술<br />클로바 OCR</strong
+              >
+              <button class="btn_more" type="button">자세히 보기</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
