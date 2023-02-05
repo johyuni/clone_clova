@@ -3,7 +3,7 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0, // 슬라이드간 사이 여백
   loop: true, // 무한루프
   pagination: {
-    el: ".swiper-pagination", // 대상..?
+    el: ".swiper-pagination", // 페이징 태그 클래스 설정
     clickable: true, // 페이지네이션 클릭하면 이동되게 할건지
   },
   autoplay: {
